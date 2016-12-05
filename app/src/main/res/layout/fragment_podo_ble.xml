@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.podo_ble"
+    android:background="@drawable/background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:text="TEST BLE" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="60dp">
+
+        <View
+            android:layout_width="46dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <com.alex.rcup.alextest.tools.TextViewOswaldRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/texte_podo_1"
+            android:id="@+id/textView_podo_1"
+            android:layout_gravity="center_horizontal|top"
+            android:includeFontPadding="false"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/texte_podo_2"
+            android:id="@+id/textView_podo_2"
+            android:layout_gravity="center_horizontal|top"
+            android:includeFontPadding="false"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_constellation_ble"
+        android:layout_gravity="center"
+        android:background="@drawable/constelltest"/>
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"/>
+
+
+            <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/nombredepas"
+                android:id="@+id/TextView_nombredepas" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1000"
+                android:id="@+id/nbpas_ble" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="80%"
+                android:id="@+id/pourcentagepas_ble" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button_podo"
+
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Berluti</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+    <string name="chargement">Chargement ...</string>
+
+    <!-- TODO : Texte de la page podo -->
+    <string name="texte_podo_1">AUJOURD\'HUI</string>
+    <string name="texte_podo_2">Constellation visitée : Sagittarius</string>
+    <string name="nombredepas">Nombre de pas</string>
+
+    <!-- TODO : Texte de la page menu -->
+    <string name="menu_titre">MONSIEUR CAMILLE LAPRÉE</string>
+    <string name="menu_soustitre">Profil de <u>Gaspard</u></string>
+    <string name="menu_texte_1">AUJOURD\'HUI</string>
+    <string name="menu_texte_2">HEALTH REPORT</string>
+    <string name="menu_texte_3">COLLECTION</string>
+    <string name="menu_texte_4">CIRAGE</string>
+    <string name="menu_texte_5">MES PAIRES</string>
+    <string name="menu_texte_6">MÉTÉO</string>
+    <string name="menu_texte_7">PRESSION</string>
+    <string name="menu_texte_8">RÉGLAGES</string>
+    <string name="menu_texte_9">CONTACT</string>
+
+    <!-- TODO : Texte de la page podo -->
+    <string name="podo_info_texte_1">Nombre\nde pas </string>
+    <string name="podo_info_nbpas">4800 </string>
+    <string name="podo_info_texte_2">Historique </string>
+    <string name="podo_info_texte_3">Temps\nde marche  </string>
+    <string name="podo_info_tpsmarche">24</string>
+    <string name="podo_info_unitetemps">MINUTES</string>
+    <string name="podo_info_texte_4">Kilomètres\nparcourus  </string>
+    <string name="podo_info_nbkm">4.5</string>
+    <string name="podo_info_unitedistance">KILOMÈTRES</string>
+    <string name="podo_info_texte_5">Vitesse\nmoyenne  </string>
+    <string name="podo_info_vitesse">10</string>
+    <string name="podo_info_unitevitesse">KM/H</string>
+
+    <!-- TODO : Texte de la page health report -->
+    <string name="healthreport_titre">HEALTH REPORT</string>
+    <string name="healthreport_soustitre">Soins et conseils</string>
+    <string name="healthreport_texte_1">Quand les\nporter</string>
+    <string name="healthreport_jour_1">VENDREDI\n4 MAI</string>
+    <string name="healthreport_texte_2">Quand les\ncirer</string>
+    <string name="healthreport_jour_2">MARDI\n16 MAI</string>
+    <string name="healthreport_texte_3">Quand les\ncrémer</string>
+    <string name="healthreport_jour_3">MERCREDII\n17 MAI</string>
+
+    <!-- TODO : Texte de la page pression plantaire -->
+    <string name="pressionplantaire_titre">PRESSION PLANTAIRE</string>
+    <string name="pressionplantaire_gauche">Gauche</string>
+    <string name="pressionplantaire_droite">Droite</string>
+
+    <!-- TODO : Texte de la page historique constellation -->
+    <string name="historique_titre">HISTORIQUE</string>
+    <string name="historique_soustitre">Collection de constellations</string>
+    <string name="historique_date_1">- 8 avril 98 % -</string>
+    <string name="historique_date_2">- 7 avril 75 % -</string>
+    <string name="historique_date_3">- 6 avril 110 % -</string>
+    <string name="historique_date_4">- 5 avril 125 % -</string>
+    <string name="historique_date_5">- 4 avril 100 % -</string>
+    <string name="historique_date_6">- 3 avril 105 % -</string>
+    <string name="historique_date_7">- 2 avril 80 % -</string>
+    <string name="historique_date_8">- 1er avril 100% -</string>
+
+    <!-- TODO : Texte de la page reglages -->
+    <string name="reglages_titre">RÉGLAGES</string>
+    <string name="reglages_subcat_1">Informations\nutilisateur</string>
+    <string name="reglages_subcat_2">Gérer\nles souliers</string>
+    <string name="reglages_subcat_3">Réglages\ndes notifications</string>
+    <string name="reglages_subcat_4">Gérer\nles semelles</string>
+    <string name="reglages_texte_1">MR LAPREE\nCAMILLE\n1,80 M\n76 KG\n-\nGAUCHER</string>
+    <string name="reglages_nbpaires">2</string>
+    <string name="reglages_texte_2">PAIRES</string>
+    <string name="reglages_choixnotif_1">MÉTÉO</string>
+    <string name="reglages_choixnotif_2">CIRAGE</string>
+    <string name="reglages_choixnotif_3">CRÉMAGE</string>
+    <string name="reglages_choixnotif_4">NBR. DE PAS</string>
+    <string name="reglages_choixsemelles_1">GAUCHE</string>
+    <string name="reglages_choixsemelles_2">DROITE</string>
+
+    <!-- TODO : Texte de la page cirage-->
+    <string name="cirage_titre">CIRAGE</string>
+    <string name="cirage_texte_1">Votre meilleur\nscore</string>
+    <string name="cirage_texte_2">Dernier score\nenregistré</string>
+    <string name="cirage_texte_3">Souhaitez-vous\nun service de cirage\nà domicile ?</string>
+    <string name="cirage_bestscore">4007</string>
+    <string name="cirage_lastscore">3562</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="paires_titre">MES PAIRES</string>
+    <string name="paires_texte_1">Gaspard</string>
+    <string name="paires_texte_2">Alessandro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cirage_tech_texte_1">TECH-\nNIQUES </string>
+    <string name="cirage_tech_texte_2">et\nSecrets\nde cirage </string>
+    <!-- TODO : Texte de la page score-->
+    <string name="score_titre">SCORES</string>
+    <string name="score_texte_1">Votre\ncordonnier\nvous félicite\npour votre\nscore :</string>
+    <string name="score_nb">3562</string>
+    <string name="score_texte_2">CONSEILS :</string>
+    <string name="score_texte_3">Pour un\ncrémage\nparfait\nutilisez :</string>
+
+    <!-- TODO : Texte de la page sav-->
+    <string name="sav_titre">SERVICE CLIENT</string>
+    <string name="sav_texte_1">Rédigez votre message ...</string>
+    <string name="sav_texte_2">Envoyez</string>
+    <string name="sav_texte_3">Questions fréquentes</string>
+</resources>

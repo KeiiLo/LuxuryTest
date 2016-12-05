@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.podo_infos"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+
+    <!-- TODO: Partie Entête -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1.5dp"
+            android:background="@color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- TODO: Partie Contenu -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="34dp">
+
+            <!-- TODO: Colonne de gauche -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="74dp">
+
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:text="@string/podo_info_texte_1"
+                    android:id="@+id/podo_info_texte_1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_nbpas"
+                    android:id="@+id/podo_info_nbpas"
+                    android:gravity="center"
+                    android:textSize="29.7sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/podo_info_cercle"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1.5dp"
+                    android:background="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:text="@string/podo_info_texte_2"
+                    android:id="@+id/podo_info_texte_2"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+                <ImageButton
+                    android:layout_width="58dp"
+                    android:layout_height="164dp"
+                    android:id="@+id/imageButton_podo_infos_historique"
+                    android:layout_gravity="center"
+                    android:background="@drawable/podo_infos_chaussure"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+            </LinearLayout>
+
+            <!-- TODO: Colonne de droite -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:text="@string/podo_info_texte_3"
+                    android:id="@+id/podo_info_texte_3"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_tpsmarche"
+                    android:id="@+id/podo_info_tpsmarche"
+                    android:layout_gravity="center"
+                    android:textSize="29.7sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_unitetemps"
+                    android:id="@+id/podo_info_unitetemps"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1.5dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:text="@string/podo_info_texte_4"
+                    android:id="@+id/podo_info_texte_4"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_nbkm"
+                    android:id="@+id/podo_info_nbkm"
+                    android:layout_gravity="center"
+                    android:textSize="29.7sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_unitedistance"
+                    android:id="@+id/podo_info_unitedistance"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1.5dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:text="@string/podo_info_texte_5"
+                    android:id="@+id/podo_info_texte_5"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_vitesse"
+                    android:id="@+id/podo_info_vitesse"
+                    android:layout_gravity="center"
+                    android:textSize="29.7sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/podo_info_unitevitesse"
+                    android:id="@+id/podo_info_unitevitesse"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- TODO: Partie Navigation -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.85dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_retour"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retour"/>
+                <ImageButton
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_home"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_coupe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coupe"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

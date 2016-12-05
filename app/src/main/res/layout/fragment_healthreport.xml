@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.healthreport"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- TODO: Partie Entête -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOswaldLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/healthreport_titre"
+            android:id="@+id/healthreport_titre"
+            android:layout_gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/healthreport_soustitre"
+            android:id="@+id/healthreport_soustitre"
+            android:layout_gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+
+        <!-- TODO : Contenu -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp">
+            <!-- TODO : 1er Ligne -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/healthreport_texte_1"
+                    android:id="@+id/healthreport_texte_1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="30dp"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/healthreport_jour_1"
+                    android:id="@+id/healthreport_jour_1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <!-- TODO : 2e Ligne -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51.3dp">
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/healthreport_texte_2"
+                    android:id="@+id/healthreport_texte_2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="36dp"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/healthreport_jour_2"
+                    android:id="@+id/healthreport_jour_2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="46dp"/>
+
+            </LinearLayout>
+
+            <!-- TODO : 3e Ligne -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51.3dp">
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/healthreport_texte_3"
+                    android:id="@+id/healthreport_texte_3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="30dp"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/healthreport_jour_3"
+                    android:id="@+id/healthreport_jour_3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="22.5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- TODO: Partie Navigation -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.85dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_retour"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retour"/>
+                <ImageButton
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_home"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_coupe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coupe"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.score"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOswaldLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_titre"
+            android:id="@+id/score_titre"
+            android:layout_gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="50dp"/>
+
+        <ImageView
+            android:layout_width="242dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView_coupes"
+            android:layout_gravity="center"
+            android:background="@drawable/coupes"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="12dp"/>
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView_facebook"
+            android:layout_gravity="right"
+            android:background="@drawable/facebook"
+            android:layout_marginBottom="12dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/cadre"
+                android:layout_marginRight="55.6dp">
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="120dp"
+                    android:layout_height="250dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/score_texte_1"
+                    android:id="@+id/score_texte_1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                   android:layout_marginTop="35dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+
+                android:background="@drawable/cadre2">
+
+            <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/score_texte_2"
+                android:id="@+id/score_texte_2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                />
+
+            <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/score_texte_3"
+                android:id="@+id/score_texte_3"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Partie Navigation -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.85dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_retour"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retour"/>
+                <ImageButton
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_home"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_coupe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coupe"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

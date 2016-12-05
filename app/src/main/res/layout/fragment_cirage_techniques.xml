@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.cirage_techniques"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="1.5dp"
+        android:src="@drawable/dotted"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="50dp"/>
+
+    <!-- TODO: Ligne 1-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/imageView_cirage_technique_1"
+            android:layout_gravity="center"
+            android:background="@drawable/cirage_technique_1"
+            android:layout_marginRight="12.4dp"/>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="12.4dp"
+            android:background="@drawable/back">
+
+            <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cirage_tech_texte_1"
+                android:layout_gravity="center"
+                android:text="@string/cirage_tech_texte_1"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cirage_tech_texte_2"
+                android:layout_gravity="center"
+                android:text="@string/cirage_tech_texte_2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!-- TODO: Ligne 2-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/imageView_cirage_technique_3"
+            android:layout_gravity="center"
+            android:background="@drawable/cirage_technique_3"
+            android:layout_marginRight="12.4dp"/>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/imageView_cirage_technique_4"
+            android:layout_gravity="center"
+            android:background="@drawable/cirage_technique_4"
+            android:layout_marginLeft="12.4dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <!-- TODO: Ligne 3-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/imageView_cirage_technique_5"
+            android:layout_gravity="center"
+            android:background="@drawable/cirage_technique_5"
+            android:layout_marginRight="12.4dp"/>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/imageView_cirage_technique_6"
+            android:layout_gravity="center"
+            android:background="@drawable/cirage_technique_6"
+            android:layout_marginLeft="12.4dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!-- TODO: Partie Navigation -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.85dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="6dp"
+            android:layout_gravity="center_horizontal|bottom"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="42dp"
+                android:id="@+id/imageButton_nav_retour"
+                android:layout_gravity="center"
+                android:background="@drawable/retour"/>
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="42dp"
+                android:id="@+id/imageButton_nav_home"
+                android:layout_gravity="center"
+                android:background="@drawable/home"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="42dp"
+                android:id="@+id/imageButton_nav_coupe"
+                android:layout_gravity="center"
+                android:background="@drawable/coupe"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+</LinearLayout>

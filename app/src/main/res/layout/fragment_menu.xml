@@ -1,0 +1,474 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.menu"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.alex.rcup.alextest.tools.TextViewOswaldLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/menu_titre"
+            android:id="@+id/menu_titre"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:text="@string/menu_soustitre"
+            android:id="@+id/menu_soustitre"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <!-- TODO : Premiere ligne -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_1"
+                        android:id="@+id/menu_texte_1"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="85dp"
+                        android:layout_height="68dp"
+                        android:id="@+id/imageButton_menu_1"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_1"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="92.5dp"
+                    android:background="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_2"
+                        android:id="@+id/menu_texte_2"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="104dp"
+                        android:layout_height="68dp"
+                        android:id="@+id/imageButton_menu_2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_2"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="92.5dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/menu_texte_3"
+                            android:id="@+id/menu_texte_3"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="3dp"/>
+
+                        <ImageButton
+                            android:layout_width="85dp"
+                            android:layout_height="68dp"
+                            android:id="@+id/imageButton_menu_3"
+                            android:layout_gravity="center"
+                            android:background="@drawable/menu_3"
+                            android:layout_marginTop="6dp"/>
+                     </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+                <View
+                    android:layout_width="92.5dp"
+                    android:layout_height="0.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"/>
+                <View
+                    android:layout_width="108dp"
+                    android:layout_height="0.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+                <View
+                    android:layout_width="92.5dp"
+                    android:layout_height="0.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <!-- TODO : Deuxieme ligne -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_4"
+                        android:id="@+id/menu_texte_4"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="85dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imageButton_menu_4"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_4"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="108dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_5"
+                        android:id="@+id/menu_texte_5"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="104dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imageButton_menu_5"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_5"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="108dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_6"
+                        android:id="@+id/menu_texte_6"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="85dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/imageButton_menu_6"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_6"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+                <View
+                    android:layout_width="92.5dp"
+                    android:layout_height="0.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"/>
+                <View
+                    android:layout_width="108dp"
+                    android:layout_height="0.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+                <View
+                    android:layout_width="92.5dp"
+                    android:layout_height="0.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+
+            <!-- TODO : Troisiemme ligne -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_7"
+                        android:id="@+id/menu_texte_7"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="85dp"
+                        android:layout_height="57dp"
+                        android:id="@+id/imageButton_menu_7"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_7"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="92.5dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_8"
+                        android:id="@+id/menu_texte_8"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="104dp"
+                        android:layout_height="57dp"
+                        android:id="@+id/imageButton_menu_8"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_8"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.85dp"
+                    android:layout_height="92.5dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/menu_texte_9"
+                        android:id="@+id/menu_texte_9"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:layout_width="85dp"
+                        android:layout_height="57dp"
+                        android:id="@+id/imageButton_menu_9"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_9"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- TODO: Partie Navigation -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.85dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal|bottom"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_retour"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retour"/>
+                <ImageButton
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_home"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_coupe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coupe"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

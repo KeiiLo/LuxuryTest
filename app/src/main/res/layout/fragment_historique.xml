@@ -1,0 +1,381 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.historique"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <!-- TODO: Partie Entête -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOswaldLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/historique_titre"
+            android:id="@+id/historique_titre"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/historique_soustitre"
+            android:id="@+id/historique_soustitre"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <!-- TODO : 1er ligne -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="34dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="11.5dp">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/imageView_historique_constellation_1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/historique_constellation_1"
+                    />
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/historique_date_1"
+                    android:id="@+id/historique_date_1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="7.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11.5dp">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/imageView_historique_constellation_2"
+                    android:layout_gravity="center"
+                    android:background="@drawable/historique_constellation_2" />
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/historique_date_2"
+                    android:id="@+id/historique_date_2"
+                    android:layout_gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+            <!-- TODO : 2e ligne -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7.5dp"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="11.5dp">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView_historique_constellation_3"
+                        android:layout_gravity="center"
+                        android:background="@drawable/historique_constellation_3"
+                        />
+
+                    <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/historique_date_3"
+                        android:id="@+id/historique_date_3"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.5dp">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView_historique_constellation_4"
+                        android:layout_gravity="center"
+                        android:background="@drawable/historique_constellation_4" />
+
+                    <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/historique_date_4"
+                        android:id="@+id/historique_date_4"
+                        android:layout_gravity="center_horizontal"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <!-- TODO : 3e ligne -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7.5dp"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="11.5dp">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView_historique_constellation_5"
+                        android:layout_gravity="center"
+                        android:background="@drawable/historique_constellation_5"
+                        />
+
+                    <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/historique_date_5"
+                        android:id="@+id/historique_date_5"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.5dp">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView_historique_constellation_6"
+                        android:layout_gravity="center"
+                        android:background="@drawable/historique_constellation_6" />
+
+                    <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/historique_date_6"
+                        android:id="@+id/historique_date_6"
+                        android:layout_gravity="center_horizontal"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- TODO : 4e ligne -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="11.5dp">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView_historique_constellation_7"
+                        android:layout_gravity="center"
+                        android:background="@drawable/historique_constellation_7"
+                        />
+
+                    <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/historique_date_7"
+                        android:id="@+id/historique_date_7"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11.5dp">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView_historique_constellation_8"
+                        android:layout_gravity="center"
+                        android:background="@drawable/historique_constellation_8" />
+
+                    <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/historique_date_8"
+                        android:id="@+id/historique_date_8"
+                        android:layout_gravity="center_horizontal"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="7.5dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- TODO: Partie Navigation -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.85dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_retour"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retour"/>
+                <ImageButton
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_home"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_coupe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coupe"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

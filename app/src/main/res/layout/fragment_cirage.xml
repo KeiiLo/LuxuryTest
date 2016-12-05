@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.rcup.alextest.fragments.cirage"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <com.alex.rcup.alextest.tools.TextViewOswaldLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cirage_titre"
+            android:id="@+id/cirage_titre"
+            android:layout_gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="50dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top">
+            <!-- TODO : 1er colonne-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp">
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cirage_texte_1"
+                    android:id="@+id/cirage_texte_1"
+                    android:layout_gravity="center_horizontal|top"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="64dp"
+                    android:layout_height="59dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/cirage_bestscore"
+                    android:id="@+id/cirage_bestscore"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:background="@drawable/grandecoupe"
+                    android:layout_marginTop="10dp"/>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1.85dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="26dp"/>
+
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cirage_texte_2"
+                    android:id="@+id/cirage_texte_2"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <com.alex.rcup.alextest.tools.TextViewOswaldLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/cirage_lastscore"
+                    android:id="@+id/cirage_lastscore"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="1.85dp"
+                    android:src="@drawable/dotted"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"/>
+
+                <ImageView
+                    android:layout_width="53dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imageView_facebook"
+                    android:layout_gravity="center"
+                    android:background="@drawable/facebook"/>
+
+            </LinearLayout>
+
+            <!-- TODO : 2e colonne-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:layout_width="134dp"
+                    android:layout_height="149dp"
+                    android:id="@+id/cirage_photo"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cirage_photo"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="11.7dp"
+                    android:id="@+id/cirage_crochet_haut"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cordonnier_cadre_1"
+                    android:layout_marginTop="40dp"/>
+                <com.alex.rcup.alextest.tools.TextViewOriginalGaramondItalique
+                    android:layout_width="146dp"
+                    android:layout_height="116dp"
+                    android:text="@string/cirage_texte_3"
+                    android:id="@+id/cirage_texte_3"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="11.7dp"
+                    android:id="@+id/cirage_crochet_bas"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cordonnier_cadre_2"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:id="@+id/imageButton_plus"
+            android:layout_gravity="center"
+            android:background="@drawable/plus"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"/>
+        </LinearLayout>
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Partie Navigation -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.85dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_retour"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retour"/>
+                <ImageButton
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_home"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/imageButton_nav_coupe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coupe"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
