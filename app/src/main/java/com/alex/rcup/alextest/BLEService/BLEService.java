@@ -42,7 +42,7 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
      * Cheat
      */
     private static final String DEVICE_NAME = "Smart Sole 001";
-    private static final String DEVICE_MAC = "F9:B6:E9:FD:2A:98";
+    private static final String DEVICE_MAC = "ED:AC:22:E0:E0:38";
 
     /**
      * All services/characteristics/descriptor UUIDs
@@ -61,10 +61,11 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
     private static final UUID PRESSURE_CONFIG_CHAR = UUID.fromString("00002502-1212-efde-1523-785fef13d123");
     /* Client Configuration Descriptor */
     private static final UUID CONFIG_DESCRIPTOR = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
+
+
     /**
      * Instantiation des différents objets
      */
-
     // Attributs de la classe
     private BluetoothGatt mGatt;
     private BluetoothManager mBluetoothManager;
