@@ -36,7 +36,7 @@ public class podo extends Fragment implements View.OnClickListener{
 
     private IOnFragmentInteractionListener mListener;
 
-    public int dailySteps = 1000;
+    public int dailySteps = 100;
     private int ressourcesRatio = dailySteps / 52;
 
     private Button mButton_podo;
@@ -404,6 +404,10 @@ public class podo extends Fragment implements View.OnClickListener{
             case 51:
                 mImageView_constell.setImageResource(R.drawable.appli0);
                 break;
+            default:
+                mImageView_constell.setImageResource(R.drawable.appli0);
+                break;
+
         }
     }
     private ImageView mImageView_constell;

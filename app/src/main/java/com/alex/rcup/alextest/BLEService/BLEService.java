@@ -72,8 +72,6 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothLeScanner mBluetoothLeScanner;
     private BluetoothDevice mDevice;
-    private ScanFilter mFilter;
-    private ScanCallback mScanCallBack;
     private BluetoothGattCharacteristic mCharacteristic;
     private ScanCallback scanCallBack;
 
@@ -86,7 +84,6 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
     private Context mContext;
 
     public static BLEService getInstance(Context context) {
-        Log.e(TAG, "YO");
         if (mInstance == null) {
             mInstance = new BLEService(context);
         }
@@ -98,72 +95,9 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
         mBluetoothManager = (BluetoothManager) mContext.getSystemService(Context.BLUETOOTH_SERVICE);
         mBluetoothAdapter = mBluetoothManager.getAdapter();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Log.e(TAG, "YO");
             mBluetoothLeScanner = mBluetoothAdapter.getBluetoothLeScanner();
         }
         mDevices = new SparseArray<>();
-    }
-
-    public BluetoothGattCharacteristic getmCharacteristic() {
-        return mCharacteristic;
-    }
-
-    public BluetoothGatt getmGatt() {
-        return mGatt;
-    }
-
-    public void setmGatt(BluetoothGatt mGatt) {
-        this.mGatt = mGatt;
-    }
-
-    public BluetoothManager getmBluetoothManager() {
-        return mBluetoothManager;
-    }
-
-    public void setmBluetoothManager(BluetoothManager mBluetoothManager) {
-        this.mBluetoothManager = mBluetoothManager;
-    }
-
-    public BluetoothAdapter getmBluetoothAdapter() {
-        return mBluetoothAdapter;
-    }
-
-    public void setmBluetoothAdapter(BluetoothAdapter mBluetoothAdapter) {
-        this.mBluetoothAdapter = mBluetoothAdapter;
-    }
-
-    public BluetoothDevice getmDevice() {
-        return mDevice;
-    }
-
-    public void setmDevice(BluetoothDevice mDevice) {
-        this.mDevice = mDevice;
-    }
-
-    public SparseArray<BluetoothDevice> getmDevices() {
-        return mDevices;
-    }
-
-    public void setmDevices(SparseArray<BluetoothDevice> mDevices) {
-        this.mDevices = mDevices;
-    }
-
-    public Runnable getmStopRunnable() {
-        return mStopRunnable;
-    }
-
-    public Runnable getmStartRunnable() {
-        return mStartRunnable;
-    }
-
-    public BluetoothGattCallback getmGattCallback() {
-
-        return mGattCallback;
-    }
-
-    public Handler getmHandler() {
-
-        return mHandler;
     }
 
     /**
@@ -276,27 +210,6 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
      * Allow the scan to be stopped by making two threads
      */
 
-    private Runnable mStopRunnable = new Runnable() {
-        @Override
-        public void run() {
-            stopScan();
-        }
-    };
-
-    private Runnable mStartRunnable = new Runnable() {
-        @Override
-        public void run() {
-            startScan();
-        }
-    };
-
-    private Runnable mConnectToDevice = new Runnable() {
-        @Override
-        public void run() {
-            connectToDevice(mDevice);
-        }
-    };
-
     public void startScan() {
         Log.d(TAG, "Scanning devices");
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -317,6 +230,10 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
                 @Override
                 public void onScanResult(int callbackType, ScanResult result) {
                     processResult(result);
+                    if (mDevice != null) {
+                        stopScan();
+                        connectToDevice(mDevice);
+                    }
                 }
 
                 @Override
@@ -345,8 +262,6 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
                     mDevice = result.getDevice();
                     Log.e(TAG, "User's Mac Address is:" + DEVICE_MAC);
                     Log.e(TAG, "Device found: " + mDevice.getName() + ": " + mDevice.getAddress().toString());
-                    stopScan();
-                    connectToDevice(mDevice);
                 }
             }
         }
@@ -386,11 +301,10 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
     }
 
     public BluetoothGatt connectToDevice(BluetoothDevice device) {
-        Toast.makeText(mContext, "Connecting to " + mDevice.getName(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(mContext, "Connecting to " + mDevice.getName(), Toast.LENGTH_LONG).show();
         if (mGatt == null) {
             mGatt = device.connectGatt(mContext, true, mGattCallback);
         }
-        Toast.makeText(mContext, "Connected", Toast.LENGTH_SHORT).show();
         return mGatt;
     }
 
@@ -447,14 +361,10 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
                     characteristic = gatt.getService(ENERGY_SERVICE)
                             .getCharacteristic(ENERGY_CONFIG_CHAR);
                     break;
-                /*case 1:
-                    Log.d(TAG, "Set notify energy");
-                    characteristic = gatt.getService(ENERGY_SERVICE)
-                            .getCharacteristic(ENERGY_DATA_CHAR);
-                    break;*/
                 default:
                     mEnabled = true;
                     mHandler.sendEmptyMessage(MSG_DISMISS);
+                    Toast.makeText(mContext, "Connected", Toast.LENGTH_SHORT).show();
                     Log.i(TAG, "All Sensors Enabled");
                     return;
             }
@@ -536,16 +446,6 @@ public class BLEService implements BluetoothAdapter.LeScanCallback {
                 Log.e("Pressure", "Received Pressure notification");
                 Log.e(TAG, bytesToHex(characteristic.getValue()));
                 mHandler.sendMessage(Message.obtain(null, MSG_PRESSURE, characteristic));
-                /*byte[] setConfig = new byte[]{(byte) 0x30, (byte) 0x28, (byte) 0x00};
-                byte[] readConfig = new byte[]{(byte) 0x31};
-                BluetoothGattCharacteristic configChar = mGatt.getService(PRESSURE_SERVICE).getCharacteristic(PRESSURE_CONFIG_CHAR);
-                if (count % 2 == 0) {
-                    configChar.setValue(setConfig);
-                } else {
-                    configChar.setValue(readConfig);
-                }
-                count++;
-                gatt.writeCharacteristic(configChar);*/
             }
             if (ENERGY_DATA_CHAR.equals(characteristic.getUuid())) {
                 Log.e("Energy", "Received Energy notification");
